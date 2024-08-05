@@ -8,17 +8,19 @@ export const GET: RequestHandler = async ({ url }) => {
   const page = url.searchParams.get("page") || "1";
   const seed = url.searchParams.get("seed") || "";
   const query = url.searchParams.get("q") || "";
+  const resolutions = url.searchParams.get("resolutions") || "";
+  const categories = url.searchParams.get("categories") || "111";
 
   const params = new URLSearchParams({
     apikey: API_KEY,
     sorting: "random",
     page,
     seed,
+    categories,
   });
 
-  if (query) {
-    params.append("q", query);
-  }
+  if (query) params.append("q", query);
+  if (resolutions) params.append("resolutions", resolutions);
 
   try {
     const response = await fetch(`${API_BASE_URL}/search?${params}`);
