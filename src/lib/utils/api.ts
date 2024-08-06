@@ -1,3 +1,5 @@
+import type { ApiResponse } from "$lib/types/wallpaper";
+
 export async function fetchWallpapers(
   page: number = 1,
   seed?: string,
@@ -7,6 +9,8 @@ export async function fetchWallpapers(
 ): Promise<ApiResponse> {
   const params = new URLSearchParams({
     page: page.toString(),
+    purity: "100", // SFW only
+    apikey: "YOUR_API_KEY_HERE", // Replace with your actual API key
   });
 
   if (seed) params.append("seed", seed);
@@ -14,17 +18,13 @@ export async function fetchWallpapers(
   if (resolution) params.append("resolutions", resolution);
   if (categories) params.append("categories", categories);
 
-  try {
-    const response = await fetch(`/api/wallpapers?${params}`);
+  const response = await fetch(`/api/wallpapers?${params}`);
 
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Error fetching wallpapers:", error);
-    throw error;
+  if (!response.ok) {
+    throw new Error("Failed to fetch wallpapers");
   }
+
+  const data = await response.json();
+  console.log("API Response:", data); // Add this line for debugging
+  return data;
 }

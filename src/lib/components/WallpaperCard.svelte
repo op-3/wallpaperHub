@@ -24,10 +24,10 @@
     <div class="card-body p-4">
       <div class="flex justify-between items-center">
         <span class="badge badge-primary">{wallpaper.category}</span>
-        <div class="flex items-center space-x-2">
+        <!-- <div class="flex items-center space-x-2">
           <span class="text-sm">{wallpaper.views} views</span>
-          <!-- <span class="text-sm">{wallpaper.favorites} favs</span> -->
-        </div>
+       <span class="text-sm">{wallpaper.favorites} favs</span>
+        </div> -->
       </div>
     </div>
   </div>
