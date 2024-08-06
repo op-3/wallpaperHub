@@ -3,7 +3,7 @@
 ![01](https://github.com/user-attachments/assets/e6be616b-52e0-4688-a1f4-5a8f57b52404)
 
 
-Wallpaper Explorer is a modern, interactive web application for discovering and downloading high-quality wallpapers. Built with SvelteKit and Tailwind CSS, it offers a smooth, responsive user interface with captivating animations.
+Wallpaper Hub is a modern, interactive web application for discovering and downloading high-quality wallpapers. Built with SvelteKit and Tailwind CSS, it offers a smooth, responsive user interface with captivating animations.
 
 ## Features
 
@@ -26,11 +26,11 @@ Wallpaper Explorer is a modern, interactive web application for discovering and 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wallpaper-explorer.git
+   git clone https://github.com/op-3/wallpaperHub.git
    ```
 2. Navigate to the project folder:
   ```bash
-  cd wallpaper-explorer
+  cd wallpaperHub
   ```
 3. Install dependencies:
   ```bash
