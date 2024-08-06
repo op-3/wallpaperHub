@@ -10,7 +10,6 @@ export async function fetchWallpapers(
   const params = new URLSearchParams({
     page: page.toString(),
     purity: "100", // SFW only
-    apikey: "YOUR_API_KEY_HERE", // Replace with your actual API key
   });
 
   if (seed) params.append("seed", seed);
@@ -24,7 +23,5 @@ export async function fetchWallpapers(
     throw new Error("Failed to fetch wallpapers");
   }
 
-  const data = await response.json();
-  console.log("API Response:", data); // Add this line for debugging
-  return data;
+  return response.json();
 }

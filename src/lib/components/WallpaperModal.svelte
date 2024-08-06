@@ -33,7 +33,7 @@
       document.body.removeChild(a);
     } catch (error) {
       console.error('Download failed:', error);
-      // Open image in new tab as fallback
+      
       window.open(wallpaper.path, '_blank');
     }
   }
@@ -53,7 +53,7 @@
   }
 
   onMount(() => {
-    stop(); // إيقاف التمرير السلس في الصفحة الرئيسية
+    stop(); 
     const smallImg = new Image();
     smallImg.onload = () => {
       imageLoaded = true;
@@ -64,7 +64,7 @@
     };
     smallImg.src = wallpaper.thumbs.large;
 
-    // إضافة مستمع لعجلة الماوس للتمرير داخل المودال
+
     const handleWheel = (e: WheelEvent) => {
       if (modalContent) {
         e.preventDefault();
@@ -79,7 +79,7 @@
   });
 
   onDestroy(() => {
-    start(); // إعادة تشغيل التمرير السلس عند إغلاق المودال
+    start(); 
   });
 </script>
 
