@@ -1,6 +1,6 @@
 # Wallpaper Hub
 
-![Wallpaper Explorer Screenshot] ![Screenshot_1](https://github.com/user-attachments/assets/c2b359ef-cf2c-4c56-898a-3a3b38a2388c)
+![Screenshot_1](https://github.com/user-attachments/assets/c2b359ef-cf2c-4c56-898a-3a3b38a2388c)
 
 Wallpaper Explorer is a modern, interactive web application for discovering and downloading high-quality wallpapers. Built with SvelteKit and Tailwind CSS, it offers a smooth, responsive user interface with captivating animations.
 
