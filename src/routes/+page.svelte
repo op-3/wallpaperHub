@@ -134,7 +134,7 @@
       in:fly="{{ y: -50, duration: 800, delay: 500, easing: elasticOut }}" 
       class="text-5xl font-bold mb-8 text-center text-primary"
     >
-      Wallpaper Explorer
+      Wallpaper Hub
     </h1>
     
     <div in:fly="{{ y: 50, duration: 800, delay: 700, easing: quintOut }}">
