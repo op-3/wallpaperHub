@@ -76,6 +76,8 @@
     loadWallpapers(true);
   }
 
+  
+
   function handleCategoryChange(event: CustomEvent<string>) {
     selectedCategories = event.detail;
     loadWallpapers(true);
